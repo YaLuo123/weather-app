@@ -24,7 +24,7 @@ const updateUI=(data)=>{
     `;
 
     // update the night/day/icon images
-    const timeSrc = weather.IsDayTime ? '/img/day.svg' :'/img/night.svg';
+    const timeSrc = weather.IsDayTime ? './img/day.svg' :'./img/night.svg';
     //let timeSrc=null;
     // if(weather.IsDayTime){
     //     timeSrc = '/weather_app/img/day.svg';
@@ -33,7 +33,7 @@ const updateUI=(data)=>{
     // }
     time.setAttribute('src',timeSrc);
 
-    const iconSrc = `/img/icons/${weather.WeatherIcon}.svg`;
+    const iconSrc = `./img/icons/${weather.WeatherIcon}.svg`;
     icon.setAttribute('src',iconSrc);
 
 
